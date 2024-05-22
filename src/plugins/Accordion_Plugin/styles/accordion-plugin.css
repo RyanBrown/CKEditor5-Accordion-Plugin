@@ -16,9 +16,7 @@
   font-weight: 700;
   outline: none;
   padding: 0.5rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .accordion-plugin .accordion-header .accordion-button::before,
 .accordion-plugin.ck-editor__editable .accordion-header .accordion-button::before {

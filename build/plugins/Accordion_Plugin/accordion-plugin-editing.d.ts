@@ -7,5 +7,5 @@ export default class AccordionEditing extends Plugin {
     _registerEventListenersForDataView(): void;
     _attachTitlePlaceholderEvents(viewElement: any, writer: any): void;
 }
-import { Plugin } from "@ckeditor/ckeditor5-core";
-import { Widget } from "@ckeditor/ckeditor5-widget";
+import { Plugin } from '@ckeditor/ckeditor5-core';
+import { Widget } from '@ckeditor/ckeditor5-widget';
