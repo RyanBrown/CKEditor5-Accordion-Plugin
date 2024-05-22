@@ -1,0 +1,86 @@
+.accordion-plugin .accordion-header,
+.accordion-plugin.ck-editor__editable .accordion-header {
+  align-items: center;
+  display: flex;
+  outline: none;
+  padding: 0;
+}
+.accordion-plugin .accordion-header .accordion-button,
+.accordion-plugin.ck-editor__editable .accordion-header .accordion-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  padding: 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.accordion-plugin .accordion-header .accordion-button::before,
+.accordion-plugin.ck-editor__editable .accordion-header .accordion-button::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.accordion-plugin .accordion-header .accordion-title,
+.accordion-plugin.ck-editor__editable .accordion-header .accordion-title {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.accordion-plugin .accordion-panel,
+.accordion-plugin.ck-editor__editable .accordion-panel {
+  display: none;
+  margin: 0 0 0 2.25rem;
+}
+.accordion-plugin.open .accordion-header .accordion-button::before, .accordion-plugin.ck-editor__editable .accordion-header .accordion-button::before,
+.accordion-plugin.ck-editor__editable.open .accordion-header .accordion-button::before,
+.accordion-plugin.ck-editor__editable.ck-editor__editable .accordion-header .accordion-button::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-up' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z'/%3E%3C/svg%3E");
+}
+.accordion-plugin.open .accordion-panel, .accordion-plugin.ck-editor__editable .accordion-panel,
+.accordion-plugin.ck-editor__editable.open .accordion-panel,
+.accordion-plugin.ck-editor__editable.ck-editor__editable .accordion-panel {
+  display: block;
+}
+
+.ck-editor__editable.ck-editor__nested-editable.ck-editor__nested-editable_focused.accordion-title {
+  line-height: 1rem;
+  padding: 0.5rem;
+}
+.ck-editor__editable.ck-editor__nested-editable.ck-editor__nested-editable_focused.accordion-panel {
+  padding: 0 0.5rem;
+}
+
+.accordion-header .ck-widget__type-around__button_after,
+.accordion-header .ck-widget__type-around__button_before,
+.accordion-button .ck-widget__type-around__button_after,
+.accordion-button .ck-widget__type-around__button_before {
+  display: none !important;
+}
+
+.accordion-title::before {
+  align-items: center;
+  color: #aaa;
+  content: attr(data-placeholder);
+  display: flex;
+  font-style: italic;
+}
+
+.accordion-plugin.ck-widget:hover .accordion-title,
+.accordion-plugin.ck-widget:hover .accordion-panel {
+  border: 1px dotted #3779eb;
+}
+.accordion-plugin.ck-widget:hover .ck-editor__editable.ck-editor__nested-editable.ck-editor__nested-editable_focused.accordion-title, .accordion-plugin.ck-widget:hover .ck-editor__editable.ck-editor__nested-editable.ck-editor__nested-editable_focused.accordion-panel {
+  border: 1px solid #3779eb !important;
+}
